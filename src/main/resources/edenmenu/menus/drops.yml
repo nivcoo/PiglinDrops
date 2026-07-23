@@ -1,0 +1,40 @@
+key: piglindrops:drops
+enabled: true
+content:
+  header:
+    title: "&c&lTroc des Piglins"
+  modern:
+    enabled: true
+    player_inventory: CLIENT_HIDDEN_LOCKED
+    header:
+      template: catalogue
+      title: TROC DES PIGLINS
+      subtitle: Chances moyennes obtenues en donnant un lingot d'or à un Piglin
+      accent: "#f2be42"
+      info: {label: RÉCOMPENSES, value: "19 objets", icon: hugeicons:coins-01}
+  rows: 6
+  patterns:
+    - type: edensky:layout/decoration_9x6
+      arguments: {readability: true}
+  player_inventory: VISIBLE_LOCKED
+  elements:
+    soul_speed_book: {slots: [10], presentation: {material: ENCHANTED_BOOK, name: "&e&nLivre Agilité des âmes", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e5/459 (~1,09%)", "&7Lingots requis : &e~93,8"]}, modern: {element: {placement: {mode: slots, col: 1, row: 1}, component: reward-card, icon: hugeicons:book-02, variant: rare}}}
+    soul_speed_boots: {slots: [11], presentation: {material: IRON_BOOTS, name: "&e&nBottes Agilité des âmes", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e8/459 (~1,74%)", "&7Lingots requis : &e~58,625"]}, modern: {element: {placement: {mode: slots, col: 2, row: 1}, component: reward-card, icon: hugeicons:armored-boot, variant: rare}}}
+    splash_fire_resistance: {slots: [12], presentation: {material: SPLASH_POTION, name: "&e&nPotion de résistance au feu jetable", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e8/459 (~1,74%)", "&7Lingots requis : &e~58,625"]}, modern: {element: {placement: {mode: slots, col: 3, row: 1}, component: reward-card, icon: hugeicons:test-tube-01, variant: rare}}}
+    fire_resistance: {slots: [13], presentation: {material: POTION, name: "&e&nPotion de résistance au feu", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e8/459 (~1,74%)", "&7Lingots requis : &e~58,625"]}, modern: {element: {placement: {mode: slots, col: 4, row: 1}, component: reward-card, icon: hugeicons:test-tube-01, variant: rare}}}
+    water: {slots: [14], presentation: {material: POTION, name: "&e&nFiole d'eau", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e10/459 (~2,18%)", "&7Lingots requis : &e~46,9"]}, modern: {element: {placement: {mode: slots, col: 5, row: 1}, component: reward-card, icon: hugeicons:droplet, variant: accent}}}
+    dried_ghast: {slots: [15], presentation: {material: DRIED_GHAST, name: "&e&nGhast desséché", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e10/459 (~2,18%)", "&7Lingots requis : &e~46,9"]}, modern: {element: {placement: {mode: slots, col: 6, row: 1}, component: reward-card, icon: hugeicons:monster, variant: accent}}}
+    iron_nugget: {slots: [16], presentation: {material: IRON_NUGGET, name: "&e&nPépite de fer", lore: ["", "&7Quantité : &e10–36", "&7Probabilité : &e10/459 (~2,18%)", "&7Lingots requis : &e~2,039"]}, modern: {element: {placement: {mode: slots, col: 7, row: 1}, component: reward-card, icon: hugeicons:coins-01, variant: accent}}}
+    ender_pearl: {slots: [19], presentation: {material: ENDER_PEARL, name: "&e&nPerle de l'Ender", lore: ["", "&7Quantité : &e2–4", "&7Probabilité : &e10/459 (~2,18%)", "&7Lingots requis : &e~15,63"]}, modern: {element: {placement: {mode: slots, col: 1, row: 2}, component: reward-card, icon: hugeicons:circle, variant: accent}}}
+    string: {slots: [20], presentation: {material: STRING, name: "&e&nFicelle", lore: ["", "&7Quantité : &e3–9", "&7Probabilité : &e20/459 (~4,36%)", "&7Lingots requis : &e~3,908"]}, modern: {element: {placement: {mode: slots, col: 2, row: 2}, component: reward-card, icon: hugeicons:link-04, variant: muted}}}
+    quartz: {slots: [21], presentation: {material: QUARTZ, name: "&e&nQuartz du Nether", lore: ["", "&7Quantité : &e5–12", "&7Probabilité : &e20/459 (~4,36%)", "&7Lingots requis : &e~2,759"]}, modern: {element: {placement: {mode: slots, col: 3, row: 2}, component: reward-card, icon: hugeicons:diamond, variant: muted}}}
+    obsidian: {slots: [22], presentation: {material: OBSIDIAN, name: "&e&nObsidienne", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~11,725"]}, modern: {element: {placement: {mode: slots, col: 4, row: 2}, component: reward-card, icon: hugeicons:cube, variant: muted}}}
+    fire_charge: {slots: [23], presentation: {material: FIRE_CHARGE, name: "&e&nBoule de feu", lore: ["", "&7Quantité : &e1", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~11,725"]}, modern: {element: {placement: {mode: slots, col: 5, row: 2}, component: reward-card, icon: hugeicons:fire, variant: muted}}}
+    crying_obsidian: {slots: [24], presentation: {material: CRYING_OBSIDIAN, name: "&e&nObsidienne pleureuse", lore: ["", "&7Quantité : &e1–3", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~5,867"]}, modern: {element: {placement: {mode: slots, col: 6, row: 2}, component: reward-card, icon: hugeicons:cube, variant: muted}}}
+    leather: {slots: [25], presentation: {material: LEATHER, name: "&e&nCuir", lore: ["", "&7Quantité : &e2–4", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~3,908"]}, modern: {element: {placement: {mode: slots, col: 7, row: 2}, component: reward-card, icon: hugeicons:layers-02, variant: muted}}}
+    soul_sand: {slots: [29], presentation: {material: SOUL_SAND, name: "&e&nSable des âmes", lore: ["", "&7Quantité : &e2–8", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~2,345"]}, modern: {element: {placement: {mode: slots, col: 2, row: 3}, component: reward-card, icon: hugeicons:cube, variant: muted}}}
+    nether_brick: {slots: [30], presentation: {material: NETHER_BRICK, name: "&e&nBrique du Nether", lore: ["", "&7Quantité : &e2–8", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~2,345"]}, modern: {element: {placement: {mode: slots, col: 3, row: 3}, component: reward-card, icon: hugeicons:cube, variant: muted}}}
+    spectral_arrow: {slots: [31], presentation: {material: SPECTRAL_ARROW, name: "&e&nFlèche spectrale", lore: ["", "&7Quantité : &e6–12", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~1,303"]}, modern: {element: {placement: {mode: slots, col: 4, row: 3}, component: reward-card, icon: hugeicons:arrow-up-right-01, variant: muted}}}
+    gravel: {slots: [32], presentation: {material: GRAVEL, name: "&e&nGravier", lore: ["", "&7Quantité : &e8–16", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~0,977"]}, modern: {element: {placement: {mode: slots, col: 5, row: 3}, component: reward-card, icon: hugeicons:cube, variant: muted}}}
+    blackstone: {slots: [33], presentation: {material: BLACKSTONE, name: "&e&nRoche noire", lore: ["", "&7Quantité : &e8–16", "&7Probabilité : &e40/459 (~8,71%)", "&7Lingots requis : &e~0,977"]}, modern: {element: {placement: {mode: slots, col: 6, row: 3}, component: reward-card, icon: hugeicons:cube, variant: muted}}}
+    close: {slots: [53], presentation: {material: BARRIER, name: "&cFermer"}, modern: {element: {placement: {mode: slots, col: 7, row: 5, col_span: 2}, component: button, icon: hugeicons:cancel-circle, variant: danger}}, states: [{actions: {primary: [{type: edenmenu:close}]}}]}

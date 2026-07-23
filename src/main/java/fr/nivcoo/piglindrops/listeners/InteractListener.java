@@ -1,8 +1,6 @@
 package fr.nivcoo.piglindrops.listeners;
 
 import fr.nivcoo.piglindrops.PiglinDrops;
-import fr.nivcoo.piglindrops.inventory.PiglinDropsStaticInventory;
-import fr.nivcoo.utilsz.inventory.InventoryManager;
 import org.bukkit.Material;
 import org.bukkit.entity.Piglin;
 import org.bukkit.entity.PiglinBrute;
@@ -14,11 +12,10 @@ import org.bukkit.inventory.ItemStack;
 
 public class InteractListener implements Listener {
 
-    private final InventoryManager inventoryManager;
+    private final PiglinDrops plugin;
 
     public InteractListener() {
-        PiglinDrops piglinDrops = PiglinDrops.get();
-        inventoryManager = piglinDrops.getInventoryManager();
+        plugin = PiglinDrops.get();
     }
 
     @EventHandler
@@ -41,7 +38,7 @@ public class InteractListener implements Listener {
 
         event.setCancelled(true);
 
-        inventoryManager.openInventory(new PiglinDropsStaticInventory(), player);
+        plugin.menus().open(player);
 
     }
 }

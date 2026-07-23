@@ -1,8 +1,9 @@
 name: PiglinDrops
 version: 1.0.1
-api-version: 1.21.8
+api-version: 26.1.2
 author: nivcoo
 main: fr.nivcoo.piglindrops.PiglinDrops
+depend: [ EdenMenu ]
 permissions:
   piglindrops.open.menu:
     default: op

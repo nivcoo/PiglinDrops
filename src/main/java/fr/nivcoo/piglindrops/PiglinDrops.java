@@ -1,29 +1,23 @@
 package fr.nivcoo.piglindrops;
 
 import fr.nivcoo.piglindrops.listeners.*;
-import fr.nivcoo.utilsz.commands.CommandManager;
-import fr.nivcoo.utilsz.config.Config;
-import fr.nivcoo.utilsz.database.DatabaseManager;
-import fr.nivcoo.utilsz.inventory.InventoryManager;
+import fr.nivcoo.piglindrops.menu.PiglinDropMenus;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.File;
 
 public class PiglinDrops extends JavaPlugin implements Listener {
 
     private static PiglinDrops INSTANCE;
 
-    private InventoryManager inventoryManager;
+    private PiglinDropMenus menus;
 
 
     @Override
     public void onEnable() {
         INSTANCE = this;
 
-        inventoryManager = new InventoryManager(this);
-        inventoryManager.init();
+        menus = new PiglinDropMenus(this);
 
         Bukkit.getPluginManager().registerEvents(new InteractListener(), this);
 
@@ -33,16 +27,15 @@ public class PiglinDrops extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-
-
+        if (menus != null) menus.close();
     }
 
     public static PiglinDrops get() {
         return INSTANCE;
     }
 
-    public InventoryManager getInventoryManager() {
-        return inventoryManager;
+    public PiglinDropMenus menus() {
+        return menus;
     }
 
 }
