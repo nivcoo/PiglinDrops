@@ -1,4 +1,5 @@
 key: piglindrops:drops
+type: MENU
 enabled: true
 content:
   header:
