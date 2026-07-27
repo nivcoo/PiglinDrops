@@ -10,7 +10,7 @@ content:
     header:
       template: catalogue
       title: TROC DES PIGLINS
-      subtitle: Chances moyennes obtenues en donnant un lingot d'or à un Piglin
+      subtitle: Chances moyennes · lingot d'or offert
       accent: "#f2be42"
       info: {label: RÉCOMPENSES, value: "19 objets", icon: hugeicons:coins-01}
   rows: 6
